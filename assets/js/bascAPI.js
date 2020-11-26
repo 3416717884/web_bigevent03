@@ -10,7 +10,7 @@ $(function () {
         }
         // 拦截所有响应
         params.complete = function (res) {
-            console.log(res);
+            // console.log(res);
             if (res.responseJSON.status !== 0 && res.responseJSON.message == '身份认证失败！') {
                 // 清空本地
                 localStorage.removeItem('token')
